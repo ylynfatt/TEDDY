@@ -70,24 +70,58 @@ body {
 }
 
 /* line 14, ../src/screen.sass */
+p {
+  margin: 0 0 18px 0;
+}
+
+/* line 17, ../src/screen.sass */
 #container {
   width: 900px;
   margin: 0 auto;
 }
 
-/* line 18, ../src/screen.sass */
+/* line 21, ../src/screen.sass */
 aside, #video_container {
   float: left;
 }
 
-/* line 21, ../src/screen.sass */
+/* line 24, ../src/screen.sass */
 .clear {
   clear: both;
   overflow: hidden;
   height: 0;
 }
 
-/* line 26, ../src/screen.sass */
+/* line 30, ../src/screen.sass */
+aside h2 {
+  font-size: 14px;
+}
+/* line 33, ../src/screen.sass */
 aside ul {
   margin: 10px 0;
+}
+/* line 35, ../src/screen.sass */
+aside ul li {
+  margin: 0 0 3px 0;
+  font-size: 11px;
+}
+/* line 39, ../src/screen.sass */
+aside ul li a {
+  color: #545454;
+}
+
+/* line 41, ../src/screen.sass */
+header {
+  border-bottom: 3px solid #ff2a06;
+  margin-bottom: 3px;
+}
+/* line 46, ../src/screen.sass */
+header h1 {
+  font-size: 21px;
+  margin: 0 0 3px 0;
+}
+/* line 50, ../src/screen.sass */
+header p {
+  color: #545454;
+  font-size: 11px;
 }
