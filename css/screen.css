@@ -110,18 +110,46 @@ aside ul li a {
   color: #545454;
 }
 
-/* line 41, ../src/screen.sass */
+/* line 42, ../src/screen.sass */
 header {
   border-bottom: 3px solid #ff2a06;
   margin-bottom: 3px;
 }
-/* line 46, ../src/screen.sass */
+/* line 48, ../src/screen.sass */
 header h1 {
   font-size: 21px;
   margin: 0 0 3px 0;
 }
-/* line 50, ../src/screen.sass */
+/* line 53, ../src/screen.sass */
 header p {
   color: #545454;
   font-size: 11px;
+}
+/* line 58, ../src/screen.sass */
+header nav#auth {
+  background-color: #ececec;
+  float: left;
+  padding: 6px;
+  width: 900px;
+}
+/* line 64, ../src/screen.sass */
+header nav#auth ul.account {
+  float: right;
+  list-style: none;
+}
+/* line 68, ../src/screen.sass */
+header nav#auth ul.account li {
+  border-right: 1px solid #666666;
+  display: inline;
+  margin-right: 2px;
+  padding-right: 5px;
+}
+/* line 77, ../src/screen.sass */
+header nav#auth ul.account li a {
+  font-size: 11px;
+  color: red;
+}
+/* line 82, ../src/screen.sass */
+header nav#auth ul.account li.last {
+  border-right: none;
 }
