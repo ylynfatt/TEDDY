@@ -1,165 +1,156 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 14, ../../../../usr/local/ruby/lib/ruby/gems/1.9.1/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+/* line 1, ../src/screen.sass */
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
 }
 
-/* line 17, ../../../../usr/local/ruby/lib/ruby/gems/1.9.1/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-  color: black;
-  background: white;
-}
-
-/* line 19, ../../../../usr/local/ruby/lib/ruby/gems/1.9.1/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 21, ../../../../usr/local/ruby/lib/ruby/gems/1.9.1/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle;
-}
-
-/* line 23, ../../../../usr/local/ruby/lib/ruby/gems/1.9.1/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 25, ../../../../usr/local/ruby/lib/ruby/gems/1.9.1/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: "" "";
-}
-/* line 96, ../../../../usr/local/ruby/lib/ruby/gems/1.9.1/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-}
-
-/* line 27, ../../../../usr/local/ruby/lib/ruby/gems/1.9.1/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 8, ../src/screen.sass */
+/* line 5, ../src/screen.sass */
 body {
   font-family: Helvetica, Arial, sans-serif;
   size: 12px;
   background: white;
 }
 
-/* line 14, ../src/screen.sass */
+/* line 11, ../src/screen.sass */
 p {
   margin: 0 0 18px 0;
 }
 
-/* line 17, ../src/screen.sass */
+/* line 14, ../src/screen.sass */
 #container {
   width: 900px;
   margin: 0 auto;
 }
 
-/* line 21, ../src/screen.sass */
+/* line 18, ../src/screen.sass */
 aside, #video_container {
   float: left;
 }
 
-/* line 24, ../src/screen.sass */
+/* line 21, ../src/screen.sass */
 .clear {
   clear: both;
   overflow: hidden;
   height: 0;
 }
 
-/* line 29, ../src/screen.sass */
+/* line 26, ../src/screen.sass */
 aside {
   background: #f0f0f0;
   background: -moz-linear-gradient(center left, #f0f0f0, white);
   background: -webkit-gradient(linear, left top, right top, color-stop(0.3, #f0f0f0), color-stop(0.6, white));
 }
-/* line 33, ../src/screen.sass */
+/* line 30, ../src/screen.sass */
 aside h2 {
   font-size: 14px;
 }
-/* line 36, ../src/screen.sass */
+/* line 33, ../src/screen.sass */
 aside ul {
   margin: 10px 0;
 }
-/* line 38, ../src/screen.sass */
+/* line 35, ../src/screen.sass */
 aside ul li {
   margin: 0 0 3px 0;
   font-size: 11px;
 }
-/* line 42, ../src/screen.sass */
+/* line 39, ../src/screen.sass */
 aside ul li a {
   color: #545454;
 }
 
-/* line 45, ../src/screen.sass */
+/* line 42, ../src/screen.sass */
 header {
   border-bottom: 3px solid #ff2a06;
   margin-bottom: 3px;
 }
-/* line 51, ../src/screen.sass */
+/* line 48, ../src/screen.sass */
 header #logo {
   margin: 20px 0 20px 0;
 }
-/* line 54, ../src/screen.sass */
+/* line 51, ../src/screen.sass */
 header h1 {
   font-size: 21px;
   margin: 0 0 3px 0;
 }
-/* line 59, ../src/screen.sass */
+/* line 56, ../src/screen.sass */
 header p {
   color: #545454;
   font-size: 11px;
 }
-/* line 64, ../src/screen.sass */
+/* line 61, ../src/screen.sass */
 header nav#auth {
   background-color: #ececec;
   float: left;
   padding: 6px;
   width: 900px;
 }
-/* line 70, ../src/screen.sass */
+/* line 67, ../src/screen.sass */
 header nav#auth ul.account {
   float: right;
   list-style: none;
 }
-/* line 74, ../src/screen.sass */
+/* line 71, ../src/screen.sass */
 header nav#auth ul.account li {
   border-right: 1px solid #666666;
   display: inline;
   margin-right: 2px;
   padding-right: 5px;
 }
-/* line 83, ../src/screen.sass */
+/* line 80, ../src/screen.sass */
 header nav#auth ul.account li a {
   font-size: 11px;
   color: red;
 }
-/* line 88, ../src/screen.sass */
+/* line 85, ../src/screen.sass */
 header nav#auth ul.account li.last {
   border-right: none;
+}
+
+/* =Talks */
+/* line 91, ../src/screen.sass */
+.talk {
+  background-color: #eeeeee;
+  height: 180px;
+  font-size: 11px;
+  padding: 10px;
+  width: 530px;
+}
+/* line 100, ../src/screen.sass */
+.talk img {
+  float: left;
+  height: 180px;
+  margin: 0 10px 0 0;
+  width: 240px;
+}
+/* line 106, ../src/screen.sass */
+.talk .about_this_talk {
+  float: left;
+  width: 260px;
+}
+/* line 110, ../src/screen.sass */
+.talk .about_this_talk h3 {
+  margin: 0 0 10px 0;
+}
+/* line 113, ../src/screen.sass */
+.talk .about_this_talk .meta {
+  color: #666666;
+  font-style: italic;
+  margin: 0;
+}
+/* line 119, ../src/screen.sass */
+.talk .about_this_talk .description {
+  margin: 0 0 30px 0;
+}
+/* line 122, ../src/screen.sass */
+.talk .about_this_talk .comment_share {
+  margin: 0;
+}
+/* line 125, ../src/screen.sass */
+.talk .about_this_talk .ratings {
+  color: #666666;
+}
+/* line 128, ../src/screen.sass */
+.talk .about_this_talk .ratings span.top_rating {
+  color: black;
+  font-weight: bold;
 }
