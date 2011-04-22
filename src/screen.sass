@@ -87,13 +87,29 @@ header
 					right: none
 
 /* =Talks */
-
 .talk
+	font:
+		size: 11px
+
+.talk.inactive
+	height: 180px
+	position: relative
+	width: 240px
+
+	.about_this_talk
+		background-color: #000000
+		background-color: rgba(0, 0, 0, 0.4)
+		bottom: 0
+		padding: 3px
+		position: absolute
+
+	h3
+		color: #FFFFFF
+
+.talk.active
 	background:
 		color: #EEEEEE
 	height: 180px
-	font:
-		size: 11px
 	padding: 10px
 	width: 530px
 

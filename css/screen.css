@@ -107,50 +107,73 @@ header nav#auth ul.account li.last {
 }
 
 /* =Talks */
-/* line 91, ../src/screen.sass */
+/* line 90, ../src/screen.sass */
 .talk {
+  font-size: 11px;
+}
+
+/* line 94, ../src/screen.sass */
+.talk.inactive {
+  height: 180px;
+  position: relative;
+  width: 240px;
+}
+/* line 99, ../src/screen.sass */
+.talk.inactive .about_this_talk {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  padding: 3px;
+  position: absolute;
+}
+/* line 106, ../src/screen.sass */
+.talk.inactive h3 {
+  color: white;
+}
+
+/* line 109, ../src/screen.sass */
+.talk.active {
   background-color: #eeeeee;
   height: 180px;
-  font-size: 11px;
   padding: 10px;
   width: 530px;
 }
-/* line 100, ../src/screen.sass */
-.talk img {
+/* line 116, ../src/screen.sass */
+.talk.active img {
   float: left;
   height: 180px;
   margin: 0 10px 0 0;
   width: 240px;
 }
-/* line 106, ../src/screen.sass */
-.talk .about_this_talk {
+/* line 122, ../src/screen.sass */
+.talk.active .about_this_talk {
   float: left;
   width: 260px;
 }
-/* line 110, ../src/screen.sass */
-.talk .about_this_talk h3 {
+/* line 126, ../src/screen.sass */
+.talk.active .about_this_talk h3 {
   margin: 0 0 10px 0;
 }
-/* line 113, ../src/screen.sass */
-.talk .about_this_talk .meta {
+/* line 129, ../src/screen.sass */
+.talk.active .about_this_talk .meta {
   color: #666666;
   font-style: italic;
   margin: 0;
 }
-/* line 119, ../src/screen.sass */
-.talk .about_this_talk .description {
+/* line 135, ../src/screen.sass */
+.talk.active .about_this_talk .description {
   margin: 0 0 30px 0;
 }
-/* line 122, ../src/screen.sass */
-.talk .about_this_talk .comment_share {
+/* line 138, ../src/screen.sass */
+.talk.active .about_this_talk .comment_share {
   margin: 0;
 }
-/* line 125, ../src/screen.sass */
-.talk .about_this_talk .ratings {
+/* line 141, ../src/screen.sass */
+.talk.active .about_this_talk .ratings {
   color: #666666;
 }
-/* line 128, ../src/screen.sass */
-.talk .about_this_talk .ratings span.top_rating {
+/* line 144, ../src/screen.sass */
+.talk.active .about_this_talk .ratings span.top_rating {
   color: black;
   font-weight: bold;
 }
