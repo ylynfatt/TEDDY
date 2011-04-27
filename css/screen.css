@@ -35,90 +35,97 @@ aside, #video_container {
 }
 
 /* line 26, ../src/screen.sass */
-aside {
+section#content {
   background: #f0f0f0;
   background: -moz-linear-gradient(center left, #f0f0f0, white);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0.3, #f0f0f0), color-stop(0.6, white));
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0.3, #f0f0f0), color-stop(0.6, white));
 }
-/* line 30, ../src/screen.sass */
+
+/* line 33, ../src/screen.sass */
 aside h2 {
   font-size: 14px;
+  font-weight: 200;
 }
-/* line 33, ../src/screen.sass */
+/* line 37, ../src/screen.sass */
 aside ul {
   margin: 10px 0;
+  list-style: none;
 }
-/* line 35, ../src/screen.sass */
+/* line 41, ../src/screen.sass */
 aside ul li {
   margin: 0 0 3px 0;
   font-size: 11px;
 }
-/* line 39, ../src/screen.sass */
+/* line 45, ../src/screen.sass */
 aside ul li a {
   color: #545454;
+  text-decoration: none;
+  display: block;
 }
 
-/* line 42, ../src/screen.sass */
+/* line 53, ../src/screen.sass */
 header {
   border-bottom: 3px solid #ff2a06;
   margin-bottom: 3px;
 }
-/* line 48, ../src/screen.sass */
+/* line 59, ../src/screen.sass */
 header #logo {
   margin: 20px 0 20px 0;
 }
-/* line 51, ../src/screen.sass */
+/* line 62, ../src/screen.sass */
 header h1 {
   font-size: 21px;
+  font-weight: 300;
   margin: 0 0 3px 0;
 }
-/* line 56, ../src/screen.sass */
+/* line 68, ../src/screen.sass */
 header p {
   color: #545454;
   font-size: 11px;
 }
-/* line 61, ../src/screen.sass */
+/* line 73, ../src/screen.sass */
 header nav#auth {
   background-color: #ececec;
   float: left;
   padding: 6px;
   width: 900px;
 }
-/* line 67, ../src/screen.sass */
+/* line 79, ../src/screen.sass */
 header nav#auth ul.account {
   float: right;
   list-style: none;
 }
-/* line 71, ../src/screen.sass */
+/* line 83, ../src/screen.sass */
 header nav#auth ul.account li {
   border-right: 1px solid #666666;
   display: inline;
   margin-right: 2px;
   padding-right: 5px;
 }
-/* line 80, ../src/screen.sass */
+/* line 92, ../src/screen.sass */
 header nav#auth ul.account li a {
   font-size: 11px;
   color: red;
 }
-/* line 85, ../src/screen.sass */
+/* line 97, ../src/screen.sass */
 header nav#auth ul.account li.last {
   border-right: none;
 }
 
 /* =Talks */
-/* line 90, ../src/screen.sass */
+/* line 102, ../src/screen.sass */
 .talk {
   font-size: 11px;
 }
 
-/* line 94, ../src/screen.sass */
+/* line 106, ../src/screen.sass */
 .talk.inactive {
   height: 180px;
   position: relative;
   width: 240px;
+  -webkit-transition: all ease-in-out 0.3s;
 }
-/* line 99, ../src/screen.sass */
+/* line 112, ../src/screen.sass */
 .talk.inactive .about_this_talk {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
@@ -126,53 +133,57 @@ header nav#auth ul.account li.last {
   padding: 3px;
   position: absolute;
 }
-/* line 106, ../src/screen.sass */
+/* line 119, ../src/screen.sass */
 .talk.inactive h3 {
   color: white;
 }
 
-/* line 109, ../src/screen.sass */
+/* line 122, ../src/screen.sass */
 .talk.active {
   background-color: #eeeeee;
   height: 180px;
   padding: 10px;
   width: 530px;
 }
-/* line 116, ../src/screen.sass */
+/* line 130, ../src/screen.sass */
+.talk.active:hover {
+  cursor: pointer;
+}
+/* line 133, ../src/screen.sass */
 .talk.active img {
   float: left;
   height: 180px;
   margin: 0 10px 0 0;
   width: 240px;
 }
-/* line 122, ../src/screen.sass */
+/* line 139, ../src/screen.sass */
 .talk.active .about_this_talk {
   float: left;
   width: 260px;
 }
-/* line 126, ../src/screen.sass */
+/* line 143, ../src/screen.sass */
 .talk.active .about_this_talk h3 {
   margin: 0 0 10px 0;
 }
-/* line 129, ../src/screen.sass */
+/* line 146, ../src/screen.sass */
 .talk.active .about_this_talk .meta {
   color: #666666;
   font-style: italic;
   margin: 0;
 }
-/* line 135, ../src/screen.sass */
+/* line 152, ../src/screen.sass */
 .talk.active .about_this_talk .description {
   margin: 0 0 30px 0;
 }
-/* line 138, ../src/screen.sass */
+/* line 155, ../src/screen.sass */
 .talk.active .about_this_talk .comment_share {
   margin: 0;
 }
-/* line 141, ../src/screen.sass */
+/* line 158, ../src/screen.sass */
 .talk.active .about_this_talk .ratings {
   color: #666666;
 }
-/* line 144, ../src/screen.sass */
+/* line 161, ../src/screen.sass */
 .talk.active .about_this_talk .ratings span.top_rating {
   color: black;
   font-weight: bold;
