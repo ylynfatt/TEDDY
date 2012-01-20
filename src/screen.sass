@@ -15,7 +15,7 @@ p
 	width: 900px
 	margin: 0 auto
 	
-aside, #video_container
+aside, #video-container
 	float: left
 
 .clear
@@ -27,8 +27,11 @@ section#content
 	background: #F0F0F0 /* For IE */
 	background: -moz-linear-gradient(center left, #F0F0F0, #FFFFFF)
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0.30, #F0F0F0), color-stop(0.60, #FFFFFF))
-	
+	padding: 10px 0	
 aside
+	margin: 0 0 0 6px
+	padding: 0 0 50px
+	width: 148px
 
 	h2
 		font:
@@ -43,12 +46,21 @@ aside
 			font:
 				size: 11px
 			a
+				background: url("../images/icon_filter.gif") no-repeat left 1px
 				color: #545454
 				text-decoration: none
 				display: block
+				padding: 0 0 0 18px
 				
 				&:hover
+					background: #CCCCCC url("../images/icon_filter_over.gif") no-repeat left 1px
+
+			.selected
+				background: #CCCCCC url("../images/icon_filter_over.gif") no-repeat left 1px
 					
+#video-container
+	margin: 0 0 0 15px
+	width: 730px
 
 header
 	border:
