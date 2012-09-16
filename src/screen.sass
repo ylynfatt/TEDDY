@@ -114,6 +114,9 @@ header
 .talk
 	font:
 		size: 11px
+	width: 220px
+	margin: 10px
+	float: left
 
 .talk.inactive
 	height: 180px
@@ -123,20 +126,37 @@ header
 		
 	.about_this_talk
 		background-color: #000000
-		background-color: rgba(0, 0, 0, 0.4)
+		background-color: rgba(0, 0, 0, 0.7)
 		bottom: 0
 		padding: 3px
 		position: absolute
 
+		.meta
+			display: none
+
+		.description
+			display: none
+
+		.comment_share
+			display: none
+
+		.ratings
+			display: none
+
 	h3
 		color: #FFFFFF
+
+	img
+		height: 180px
+		width: 240px
 
 .talk.active
 	background:
 		color: #EEEEEE
 	height: 180px
-	padding: 10px
+	//padding: 10px
 	width: 530px
+	z-index: 99
 	
 	
 	&:hover
@@ -150,6 +170,7 @@ header
 
 	.about_this_talk
 		float: left
+		padding: 10px 0 0 0
 		width: 260px
 
 		h3
@@ -160,16 +181,20 @@ header
 			font:
 				style: italic
 			margin: 0
+			display: block
 
 		.description
 			margin: 0 0 30px 0
+			display: block
 
 		.comment_share
 			margin: 0
+			display: block
 
 		.ratings
 			color: #666666
-		
+			display: block
+
 			span.top_rating
 				color: #000000
 				font:

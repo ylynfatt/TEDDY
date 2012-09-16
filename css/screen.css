@@ -139,74 +139,103 @@ header nav#auth ul.account li.last {
 /* line 114, ../src/screen.sass */
 .talk {
   font-size: 11px;
+  width: 220px;
+  margin: 10px;
+  float: left;
 }
 
-/* line 118, ../src/screen.sass */
+/* line 121, ../src/screen.sass */
 .talk.inactive {
   height: 180px;
   position: relative;
   width: 240px;
   -webkit-transition: all ease-in-out 0.3s;
 }
-/* line 124, ../src/screen.sass */
+/* line 127, ../src/screen.sass */
 .talk.inactive .about_this_talk {
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   bottom: 0;
   padding: 3px;
   position: absolute;
 }
-/* line 131, ../src/screen.sass */
+/* line 134, ../src/screen.sass */
+.talk.inactive .about_this_talk .meta {
+  display: none;
+}
+/* line 137, ../src/screen.sass */
+.talk.inactive .about_this_talk .description {
+  display: none;
+}
+/* line 140, ../src/screen.sass */
+.talk.inactive .about_this_talk .comment_share {
+  display: none;
+}
+/* line 143, ../src/screen.sass */
+.talk.inactive .about_this_talk .ratings {
+  display: none;
+}
+/* line 146, ../src/screen.sass */
 .talk.inactive h3 {
   color: white;
 }
+/* line 149, ../src/screen.sass */
+.talk.inactive img {
+  height: 180px;
+  width: 240px;
+}
 
-/* line 134, ../src/screen.sass */
+/* line 153, ../src/screen.sass */
 .talk.active {
   background-color: #eeeeee;
   height: 180px;
-  padding: 10px;
   width: 530px;
+  z-index: 99;
 }
-/* line 142, ../src/screen.sass */
+/* line 162, ../src/screen.sass */
 .talk.active:hover {
   cursor: pointer;
 }
-/* line 145, ../src/screen.sass */
+/* line 165, ../src/screen.sass */
 .talk.active img {
   float: left;
   height: 180px;
   margin: 0 10px 0 0;
   width: 240px;
 }
-/* line 151, ../src/screen.sass */
+/* line 171, ../src/screen.sass */
 .talk.active .about_this_talk {
   float: left;
+  padding: 10px 0 0 0;
   width: 260px;
 }
-/* line 155, ../src/screen.sass */
+/* line 176, ../src/screen.sass */
 .talk.active .about_this_talk h3 {
   margin: 0 0 10px 0;
 }
-/* line 158, ../src/screen.sass */
+/* line 179, ../src/screen.sass */
 .talk.active .about_this_talk .meta {
   color: #666666;
   font-style: italic;
   margin: 0;
+  display: block;
 }
-/* line 164, ../src/screen.sass */
+/* line 186, ../src/screen.sass */
 .talk.active .about_this_talk .description {
   margin: 0 0 30px 0;
+  display: block;
 }
-/* line 167, ../src/screen.sass */
+/* line 190, ../src/screen.sass */
 .talk.active .about_this_talk .comment_share {
   margin: 0;
+  display: block;
 }
-/* line 170, ../src/screen.sass */
+/* line 194, ../src/screen.sass */
 .talk.active .about_this_talk .ratings {
   color: #666666;
+  display: block;
 }
-/* line 173, ../src/screen.sass */
+/* line 198, ../src/screen.sass */
 .talk.active .about_this_talk .ratings span.top_rating {
   color: black;
   font-weight: bold;
